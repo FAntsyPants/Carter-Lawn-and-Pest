@@ -5,11 +5,9 @@
     <title>Carter Lawn and Pest</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="/css/Google_Map.css">
   </head>
-
-
   <body>
 <!--THE NAVABAR AS PER https://getbootstrap.com/docs/5.1/components/navbar/#nav -->
 <nav class="navbar navbar-dark bg-success bg-gradient" >
@@ -18,18 +16,35 @@
   </div>
 </nav>
 <div class = "container" >
-<div class="row ">
-  <div class="column gy-5">
+<div class="row p-5 ">
+  <div class="col">
     <img src="/CEO.jpg" class="img-fluid rounded" alt="" style="max-height:500px;">
   </div>
+<div class="col">
+<div id="map">
 </div>
 
+<div class="card">
+  <div class="card-header">
+    ⭐⭐⭐⭐ — 4/5
+  </div>
+    <div class="card-body">
+      <blockquote class="mb-0">
 
+      <p>He services my shrubbery when ever it's overgrown! </p>
+      <footer class="blockquote-footer"> Greg's Wife </footer>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
   </div>
 
   </body>
-<script type="text/javascript" src ="/js/bootstrap.js">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx294NYdxoXgcPfGEJ54GE_q7TnEVMuAM&callback=initMap&v=weekly"
+        defer
+      ></script>
 
-</script>
 
 </html>
