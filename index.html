@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="/css/Google_Map.css">
-    <script type="text/javascript" src="/js/Google_Map.js">
+    <link rel="stylesheet" type = "text/css" href="/css/Google_Map.css">
+    <script type="module" src="/js/Google_Map.js">
 
     </script>
 
   </head>
   <body class="bg-success p-2 text-dark bg-opacity-25">
-  <nav class="navbar navbar-dark bg-success bg-gradient m-0" >
+  <nav class="navbar navbar-expand-md navbar-dark bg-success bg-gradient m-0" >
 
 <!--THE NAVABAR AS PER https://getbootstrap.com/docs/5.1/components/navbar/#nav -->
 
@@ -21,15 +21,22 @@
       <a class="navbar-brand fw-bold" href="#"><img src="mowing2.svg" style="height:50px; width:50px;"> Carter Lawn and Pest</a>
   </div>
 </nav>
+
+<!--A GOOGLE MAP THAT'S NOT WORKING
+
+<div id="map"></div>
+  -->
+
+<!--PHOTO -->
 <div class = "container-fluid  p-5 m-auto" >
   <div class="col">
-    <img src="/CEO.jpg" class="img-fluid rounded mx-auto mb-5 d-block" alt="" style="height:auto;">
+    <img src="/CEO.jpg" class="img-fluid rounded mx-auto mb-5 d-block" alt="" style="height:auto; box-shadow: 5px 3px 10px;">
   </div>
 <div class="col">
-
+<!--CARDS-->
 <div class="row">
-
-<div class="card">
+"
+<div class="card" style="box-shadow: 1px 3px 10px;">
   <div class="card-header">
     ⭐⭐⭐⭐ — 4/5 Stars
   </div>
@@ -42,7 +49,7 @@
     </blockquote>
     </div>
   </div>
-  <div class="card mt-5">
+  <div class="card mt-5" style="box-shadow: 1px 3px 10px;">
     <div class="card-header">
       ⭐⭐⭐ — 3/5 Stars
     </div>
@@ -57,13 +64,13 @@
     </div>
 </div>
 </div>
-
+<!--DESCRIPTIVE PARAGRAPH-->
   <div class="row py-2">
-    <p class="text-center fs-3 "><br> Carter Lawn and Pest has been performing Lawn and Pest services at one very specific Harvest, Alabama location since 2020 </p>
+    <p class="text-center fs-3 "><br> Carter Lawn and Pest has proudly been performing Lawn and Pest services at one very specific Harvest, Alabama location since 2020 </p>
   </div>
 </div>
   </div>
-
+<!--FOOTER -->
   <footer class="footer mt-auto py-3 bg-success bg-gradient">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -73,8 +80,15 @@
       </div>
 
 
-      </ul>
+
     </footer>
+    <!--SCRIPT FOR THAT GOOGLE MAP-->
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx294NYdxoXgcPfGEJ54GE_q7TnEVMuAM&callback=initMap">
+</script>
+
+
+
   </body>
 
 
